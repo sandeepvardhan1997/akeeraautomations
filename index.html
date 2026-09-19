@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Akeera Automations — ERP, CRM and reporting systems for Indian businesses</title>
-<meta name="description" content="Akeera Automations builds ERP, sales CRM, field-team tracking and automatic reporting for small and mid-size businesses in India. Built on the tools you already pay for. Delhi based.">
+<meta name="description" content="Akeera Automations builds ERP, sales CRM, field-team tracking and automatic reporting for small and mid-size businesses in India. Fixed prices from ₹25,000. Delhi based.">
 <meta name="theme-color" content="#0E2434">
 <link rel="canonical" href="https://akeeraautomations.com/">
 
@@ -109,7 +109,7 @@ a{color:var(--blue-deep)}
 .nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.5px;background:var(--teal);transform:scaleX(0);transform-origin:right;transition:transform .3s var(--ease)}
 .nav-links a:hover{color:var(--ink)}
 .nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
-@media(max-width:900px){.nav-links{display:none}}
+@media(max-width:1000px){.nav-links{display:none}}
 
 .btn{display:inline-block;font-family:var(--text);font-size:15.5px;font-weight:600;padding:11px 20px;border-radius:4px;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .22s var(--ease),color .22s var(--ease),transform .12s var(--ease)}
 .btn:active{transform:translateY(1px)}
@@ -209,6 +209,51 @@ a{color:var(--blue-deep)}
 .step h3{font-size:1.12rem;margin-bottom:8px}
 .step p{font-size:15.5px;color:var(--ink-soft);margin:0}
 
+/* ---------- pricing ---------- */
+.pricing{background:var(--paper-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch;padding-top:14px}
+@media(max-width:960px){.plans{grid-template-columns:1fr;max-width:540px;margin:0 auto}}
+.plan{position:relative;display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:28px 24px 26px;transition:border-color .3s var(--ease),box-shadow .3s var(--ease)}
+.plan:hover{border-color:var(--teal);box-shadow:0 18px 44px -32px rgba(14,36,52,.85)}
+.plan-name{font-size:1.32rem}
+.plan-for{font-size:14.5px;color:var(--ink-soft);margin:9px 0 0;line-height:1.5}
+@media(min-width:961px){.plan-for{min-height:4.4em}}
+.plan-price{margin:20px 0 0;padding-top:18px;border-top:1px solid var(--rule)}
+.plan-price b{display:block;font-family:var(--display);font-size:2.1rem;font-weight:600;letter-spacing:-.035em;line-height:1;font-variant-numeric:tabular-nums}
+.plan-price span{display:block;font-size:13.5px;color:var(--ink-soft);margin-top:8px}
+.plan ul{list-style:none;margin:22px 0 0;padding:0;flex:1}
+.plan li{position:relative;padding-left:25px;margin-bottom:11px;font-size:15.5px;line-height:1.5}
+.plan li::before{content:"";position:absolute;left:2px;top:7px;width:9px;height:5px;border-left:2px solid var(--teal-deep);border-bottom:2px solid var(--teal-deep);transform:rotate(-45deg)}
+.plan-amc{font-size:13.5px;color:var(--ink-soft);margin:18px 0 0;padding-top:14px;border-top:1px solid var(--rule)}
+.plan .btn{margin-top:18px;text-align:center}
+@media(min-width:961px){.plan-lead{margin-top:-14px;padding-bottom:36px}}
+.plan-lead{background:var(--ink);color:var(--on-dark);border-color:var(--ink);box-shadow:0 22px 52px -34px rgba(14,36,52,.95)}
+.plan-lead:hover{border-color:var(--teal-bright)}
+.plan-lead .plan-for,.plan-lead .plan-price span,.plan-lead .plan-amc{color:var(--on-dark-soft)}
+.plan-lead .plan-price,.plan-lead .plan-amc{border-top-color:rgba(232,241,245,.24)}
+.plan-lead li::before{border-left-color:var(--teal-bright);border-bottom-color:var(--teal-bright)}
+.plan-lead .btn-line{color:var(--on-dark);border-color:var(--teal-bright)}
+.plan-lead .btn-line:hover{background:var(--teal-bright);color:var(--ink)}
+.plan-tag{position:absolute;top:-12px;left:24px;background:var(--teal-bright);color:#07211D;font-size:12.5px;font-weight:600;padding:4px 12px;border-radius:3px}
+
+.plan-incl{margin-top:34px;border-top:1px solid var(--rule);padding-top:24px;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+@media(max-width:860px){.plan-incl{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.plan-incl{grid-template-columns:1fr}}
+.plan-incl b{display:block;font-family:var(--display);font-size:15.5px;font-weight:600;margin-bottom:5px}
+.plan-incl p{font-size:14.5px;color:var(--ink-soft);margin:0}
+
+.tools{margin-top:40px;border-top:2px solid var(--ink);padding-top:26px}
+.tools h3{font-size:1.25rem}
+.tools>p{font-size:15.5px;color:var(--ink-soft);margin-top:10px;max-width:62ch}
+.tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+@media(max-width:860px){.tool-grid{grid-template-columns:1fr}}
+.tool{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:20px 20px 18px}
+.tool b{display:block;font-family:var(--display);font-size:1.08rem;font-weight:600}
+.tool p{font-size:14.5px;color:var(--ink-soft);margin:8px 0 14px}
+.tool .price{font-family:var(--display);font-size:1.2rem;font-weight:600;color:var(--teal-deep);font-variant-numeric:tabular-nums}
+.tool .price em{font-style:normal;font-family:var(--text);font-size:13.5px;font-weight:400;color:var(--ink-soft)}
+.price-foot{font-size:14.5px;color:var(--ink-soft);margin:28px 0 0;max-width:70ch}
+
 .trust{background:var(--paper-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .trust-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px}
 @media(max-width:900px){.trust-grid{grid-template-columns:1fr;gap:36px}}
@@ -285,6 +330,7 @@ a{color:var(--blue-deep)}
   .hero h1 .ln2 i{transform:none}
   .flow-list li{opacity:1;transform:none}
   .tick::after{transform:rotate(42deg) scale(1)}
+  .plan li::before{transform:rotate(-45deg)}
   .flow-foot p{opacity:1}
   .flow-replay{display:none}
   .wa{transform:none;opacity:1}
@@ -312,6 +358,7 @@ a{color:var(--blue-deep)}
       <a href="#build">What we build</a>
       <a href="#work">Work</a>
       <a href="#how">How we work</a>
+      <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
     </nav>
     <a class="btn btn-solid" href="#contact">Get a free call</a>
@@ -328,7 +375,7 @@ a{color:var(--blue-deep)}
       <p class="hero-sub rv d1">We build ERP, sales CRM, field-team tracking and automatic reporting for small and mid-size businesses in India — on the tools you already pay for.</p>
       <div class="hero-cta rv d2">
         <a class="btn btn-solid" href="#contact">Get a free call</a>
-        <a class="btn btn-line" href="#work">See the work</a>
+        <a class="btn btn-line" href="#pricing">See prices</a>
       </div>
       <p class="hero-note rv d3"><span class="dot"></span>Delhi based. Working with manufacturers, distributors and field sales teams.</p>
     </div>
@@ -619,6 +666,111 @@ a{color:var(--blue-deep)}
   </div>
 </section>
 
+<!-- PRICING -->
+<section class="sec pricing" id="pricing">
+  <div class="shell">
+    <div class="sec-head rv">
+      <h2>What it costs</h2>
+      <p>Three ways businesses usually start with us. Treat every figure below as a starting point — your final price is fixed in writing after the first call, once we both know the scope.</p>
+      <span class="hrule"></span>
+    </div>
+
+    <div class="plans">
+      <div class="plan rv">
+        <h3 class="plan-name">Starter</h3>
+        <p class="plan-for">For one clear problem — the document, register or report that is eating someone's whole day.</p>
+        <p class="plan-price"><b>₹25,000</b><span>onwards, paid once</span></p>
+        <ul>
+          <li>One system, built on the sheet your team already uses</li>
+          <li>Quotations, proforma invoices or challans as ready PDFs</li>
+          <li>Up to 5 users</li>
+          <li>Staff training and documentation in plain language</li>
+          <li>30 days of support after handover</li>
+        </ul>
+        <p class="plan-amc">Support after that: ₹1,500 a month, optional</p>
+        <a class="btn btn-line" href="#contact">Get a free call</a>
+      </div>
+
+      <div class="plan plan-lead rv d1">
+        <span class="plan-tag">Most chosen</span>
+        <h3 class="plan-name">Professional</h3>
+        <p class="plan-for">For a sales team working outside the office, and an owner who wants the day's numbers without asking for them.</p>
+        <p class="plan-price"><b>₹95,000</b><span>onwards, paid once</span></p>
+        <ul>
+          <li>Everything in Starter</li>
+          <li>Sales CRM with lead assignment and follow-up reminders</li>
+          <li>Field app on your staff's own phones — check-in, visits, orders</li>
+          <li>Daily and weekly reports sent to you automatically</li>
+          <li>Dashboards in Looker Studio or Power BI</li>
+          <li>Up to 20 users</li>
+          <li>90 days of support, on-site training included</li>
+        </ul>
+        <p class="plan-amc">Support after that: ₹6,000 a month</p>
+        <a class="btn btn-line" href="#contact">Get a free call</a>
+      </div>
+
+      <div class="plan rv d2">
+        <h3 class="plan-name">Enterprise</h3>
+        <p class="plan-for">For a full order-to-payment system across departments, connected to the software you already run.</p>
+        <p class="plan-price"><b>₹2,50,000</b><span>onwards, quoted module by module</span></p>
+        <ul>
+          <li>Everything in Professional</li>
+          <li>Full ERP — order, stock, dispatch, payment and party ledger</li>
+          <li>Connects to your Tally or billing software</li>
+          <li>Separate access for each department and role</li>
+          <li>Unlimited users</li>
+          <li>Delivered in stages, one live module at a time</li>
+          <li>6 months of support with an agreed response time</li>
+        </ul>
+        <p class="plan-amc">Support after that: from ₹15,000 a month</p>
+        <a class="btn btn-solid" href="#contact">Talk about scope</a>
+      </div>
+    </div>
+
+    <div class="plan-incl rv">
+      <div>
+        <b>The first call is free</b>
+        <p>So is the written scope document you get after it.</p>
+      </div>
+      <div>
+        <b>The price is fixed</b>
+        <p>Agreed in writing before work starts. No hourly billing.</p>
+      </div>
+      <div>
+        <b>Built in your account</b>
+        <p>The system and the data stay in your own Google or cloud account.</p>
+      </div>
+      <div>
+        <b>Paid in three parts</b>
+        <p>40% to begin, 40% on delivery, 20% after handover.</p>
+      </div>
+    </div>
+
+    <div class="tools rv">
+      <h3>Or subscribe to a tool that is already built</h3>
+      <p>Ready the same day, billed by the month. Stop whenever you want — there is no annual lock-in and no setup fee.</p>
+      <div class="tool-grid">
+        <div class="tool">
+          <b>Maps Extractor Pro</b>
+          <p>Search businesses by city and category, and get back the ones with a working contact email.</p>
+          <span class="price">₹999 <em>a month</em></span>
+        </div>
+        <div class="tool">
+          <b>WhatsApp Label Exporter</b>
+          <p>Pulls your WhatsApp Business labels and customer notes into Excel or Google Sheets.</p>
+          <span class="price">₹699 <em>a month</em></span>
+        </div>
+        <div class="tool">
+          <b>Daily report pack</b>
+          <p>Sales, attendance and collection figures compiled from your data and sent to you every evening.</p>
+          <span class="price">₹2,500 <em>a month</em></span>
+        </div>
+      </div>
+      <p class="price-foot">Working with a team outside India? We quote international projects in USD — write to <a href="mailto:admin@akeeraautomations.com">admin@akeeraautomations.com</a>.</p>
+    </div>
+  </div>
+</section>
+
 <!-- TRUST -->
 <section class="sec trust" id="about">
   <div class="shell trust-grid">
@@ -677,12 +829,16 @@ a{color:var(--blue-deep)}
       <div class="faq-body"><p>The first live module is usually running on your real data in two to three weeks. A full ERP or CRM rollout takes longer and is delivered in stages, so you are never waiting months to see anything.</p></div>
     </details>
     <details>
-      <summary>What does it cost?</summary>
-      <div class="faq-body"><p>A fixed price, quoted in writing after the first call, once we know the scope. We do not charge for the first call or the scope document. If a system will not pay for itself, we will tell you rather than sell it.</p></div>
+      <summary>Why is every price marked "onwards"?</summary>
+      <div class="faq-body"><p>Because a five-person trading firm and a hundred-person factory need very different systems, and quoting one number for both would mean overcharging one of you. The plans show where each level starts. After the first call you get a single fixed figure in writing, and it does not move afterwards.</p></div>
+    </details>
+    <details>
+      <summary>Is the monthly support plan compulsory?</summary>
+      <div class="faq-body"><p>No. Every project includes a support window after handover, and the system keeps running whether or not you continue. The monthly plan is for businesses that want ongoing changes, new reports and additions as they grow.</p></div>
     </details>
     <details>
       <summary>What happens if something breaks later?</summary>
-      <div class="faq-body"><p>Every project includes a support window after handover, and an optional monthly support plan after that for changes, new reports and additions as your business grows.</p></div>
+      <div class="faq-body"><p>During your support window, we fix it at no extra cost. After that, changes and fixes are covered by the monthly plan, or quoted separately if you are not on one.</p></div>
     </details>
   </div>
 </section>
@@ -727,7 +883,19 @@ a{color:var(--blue-deep)}
             <option>Field team tracking and attendance</option>
             <option>Dashboards and daily reports</option>
             <option>Quotation, invoice or document generation</option>
+            <option>A ready tool on monthly subscription</option>
             <option>Not sure yet — want to discuss</option>
+          </select>
+        </div>
+        <div class="field wide">
+          <label for="f-plan">Which plan looks closest</label>
+          <select id="f-plan" name="plan">
+            <option value="">Choose one</option>
+            <option>Starter</option>
+            <option>Professional</option>
+            <option>Enterprise</option>
+            <option>A monthly tool subscription</option>
+            <option>Not sure — please suggest</option>
           </select>
         </div>
         <div class="field wide">
@@ -781,7 +949,17 @@ a{color:var(--blue-deep)}
   "telephone":"+91-9599750469",
   "email":"admin@akeeraautomations.com",
   "address":{"@type":"PostalAddress","addressLocality":"Delhi","addressCountry":"IN"},
-  "founder":{"@type":"Person","name":"Sandeep Bardhan","jobTitle":"Senior MIS Analyst"}
+  "founder":{"@type":"Person","name":"Sandeep Bardhan","jobTitle":"Senior MIS Analyst"},
+  "priceRange":"₹₹",
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog",
+    "name":"Automation plans",
+    "itemListElement":[
+      {"@type":"Offer","name":"Starter","price":"25000","priceCurrency":"INR","description":"One system built on your existing sheet, up to 5 users, 30 days support."},
+      {"@type":"Offer","name":"Professional","price":"95000","priceCurrency":"INR","description":"Sales CRM, field tracking app, automatic reports and dashboards, up to 20 users."},
+      {"@type":"Offer","name":"Enterprise","price":"250000","priceCurrency":"INR","description":"Full ERP with order, stock, dispatch and payment, unlimited users, staged delivery."}
+    ]
+  }
 }
 </script>
 
@@ -902,6 +1080,19 @@ a{color:var(--blue-deep)}
     });
   });
 
+  /* Plan card par click karne se form ka plan dropdown apne aap select ho jata hai */
+  Array.prototype.forEach.call(document.querySelectorAll(".plan .btn"), function(a){
+    a.addEventListener("click", function(){
+      var card = a.closest(".plan");
+      var sel = document.getElementById("f-plan");
+      if(!card || !sel) return;
+      var name = card.querySelector(".plan-name").textContent.trim();
+      Array.prototype.forEach.call(sel.options, function(o){
+        if(o.value === name) sel.value = name;
+      });
+    });
+  });
+
   var form = document.getElementById("leadForm");
   var msg = document.getElementById("formMsg");
   var btn = document.getElementById("submitBtn");
@@ -918,6 +1109,7 @@ a{color:var(--blue-deep)}
       + "Phone: " + d.phone + "\n"
       + "City: " + (d.city || "-") + "\n"
       + "Needs: " + (d.need || "-") + "\n"
+      + "Plan: " + (d.plan || "-") + "\n"
       + "Details: " + (d.message || "-");
   }
 
@@ -932,6 +1124,7 @@ a{color:var(--blue-deep)}
         phone: form.phone.value.trim(),
         city: form.city.value.trim(),
         need: form.need.value,
+        plan: form.plan.value,
         message: form.message.value.trim(),
         page: location.href,
         at: new Date().toISOString()
