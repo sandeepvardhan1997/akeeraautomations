@@ -270,6 +270,14 @@ a{color:var(--blue-deep)}
 .chip{font-size:13px;border:1px solid var(--rule);background:var(--paper);border-radius:3px;padding:5px 10px;color:var(--ink-soft);transition:border-color .25s,color .25s}
 .chip:hover{border-color:var(--teal);color:var(--ink)}
 
+.udyam{display:flex;align-items:center;gap:16px;margin-top:26px;padding:16px 18px;background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--teal);border-radius:6px}
+.udyam img{width:48px;height:48px;object-fit:contain;flex:0 0 auto}
+.udyam-tx{min-width:0}
+.udyam-tx b{display:block;font-family:var(--display);font-size:15.5px;font-weight:600}
+.udyam-tx span{display:block;font-size:14px;color:var(--ink-soft);margin-top:3px;font-variant-numeric:tabular-nums;word-break:break-word}
+.udyam-tx a{font-size:13.5px;display:inline-block;margin-top:5px}
+.foot-reg{font-size:13.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+
 .faq details{border-bottom:1px solid var(--rule)}
 .faq summary{cursor:pointer;list-style:none;padding:19px 40px 19px 0;font-family:var(--display);font-size:1.16rem;font-weight:500;position:relative;transition:color .2s}
 .faq summary::-webkit-details-marker{display:none}
@@ -816,6 +824,14 @@ a{color:var(--blue-deep)}
         <li><b data-to="23" data-suffix="+">0</b><span>systems built and running in daily use</span></li>
         <li><b data-to="13">0</b><span>certifications, from IIM Bangalore to IIT Madras</span></li>
       </ul>
+      <div class="udyam">
+        <img src="assets/udyam-logo.png" alt="Udyam registration mark" loading="lazy" onerror="this.style.display='none'">
+        <span class="udyam-tx">
+          <b>A registered Indian business</b>
+          <span>Udyam (MSME) Registration No. UDYAM-DL-06-0227011</span>
+          <a href="https://udyamregistration.gov.in/Udyam_Verify.aspx" target="_blank" rel="noopener">Verify on the government portal</a>
+        </span>
+      </div>
       <p style="font-size:15px;color:var(--ink-soft);margin-top:22px">Full professional profile: <a href="https://sandeepvardhan1997.github.io/bardhanportfolio" target="_blank" rel="noopener">sandeepvardhan1997.github.io/bardhanportfolio</a></p>
     </div>
   </div>
@@ -869,6 +885,7 @@ a{color:var(--blue-deep)}
         <li><span>WhatsApp and phone</span><a href="https://wa.me/919599750469" target="_blank" rel="noopener">+91 95997 50469</a></li>
         <li><span>Email</span><a href="mailto:admin@akeeraautomations.com">admin@akeeraautomations.com</a></li>
         <li><span>Based in</span><em>Delhi, India — working across NCR and remote</em></li>
+        <li><span>Udyam (MSME) registration</span><em>UDYAM-DL-00-0000000</em></li>
       </ul>
     </div>
 
@@ -943,6 +960,7 @@ a{color:var(--blue-deep)}
       </svg>
       © <span id="yr">2026</span> Akeera Automations — Delhi, India
     </span>
+    <span class="foot-reg">Udyam Registered · UDYAM-DL-00-0000000</span>
     <span class="foot-promise">Your work is our own work. We never waste your investment.</span>
   </div>
 </footer>
@@ -966,6 +984,7 @@ a{color:var(--blue-deep)}
   "email":"admin@akeeraautomations.com",
   "address":{"@type":"PostalAddress","addressLocality":"Delhi","addressCountry":"IN"},
   "founder":{"@type":"Person","name":"Sandeep Bardhan","jobTitle":"Senior MIS Analyst"},
+  "identifier":{"@type":"PropertyValue","name":"Udyam Registration Number","value":"UDYAM-DL-00-0000000"},
   "priceRange":"₹₹",
   "hasOfferCatalog":{
     "@type":"OfferCatalog",
