@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Akeera Automations — ERP, CRM and reporting systems for Indian businesses</title>
-<meta name="description" content="Akeera Automations builds ERP, sales CRM, field-team tracking and automatic reporting for small and mid-size businesses in India. Fixed prices from ₹18,000, or a monthly fee. Delhi based.">
+<meta name="description" content="Akeera Automations builds ERP, sales CRM, field-team tracking and automatic reporting for small and mid-size businesses in India. Fixed prices from ₹18,000 plus GST, or a monthly fee. GST registered. Delhi based.">
 <meta name="theme-color" content="#12293B">
 <link rel="canonical" href="https://akeeraautomations.com/">
 
@@ -96,6 +96,14 @@ a{color:var(--blue-deep)}
   background:linear-gradient(90deg,var(--teal-bright),var(--blue));
   transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease) .1s}
 .in .hrule{transform:scaleX(1)}
+
+/* ---------- registration top bar ---------- */
+.topbar{background:var(--paper-2);border-bottom:1px solid var(--rule)}
+.topbar-in{max-width:var(--shell);margin:0 auto;padding:8px 24px;display:flex;flex-wrap:wrap;gap:6px 26px;align-items:center;font-size:13px;color:var(--ink-soft)}
+.topbar i{font-style:normal;color:var(--ink-soft)}
+.topbar b{font-weight:600;color:var(--teal-deep);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.topbar .tb-last{margin-left:auto}
+@media(max-width:760px){.topbar-in{gap:4px 18px;font-size:12px;padding:7px 18px}.topbar .tb-last{margin-left:0}}
 
 /* ---------- nav ---------- */
 .nav{position:sticky;top:0;z-index:40;background:rgba(248,250,251,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);transition:box-shadow .3s var(--ease),background .3s var(--ease)}
@@ -380,6 +388,14 @@ a{color:var(--blue-deep)}
 </head>
 <body>
 
+<div class="topbar">
+  <div class="topbar-in">
+    <span><i>GSTIN</i> <b>07CUCPB3252M1ZQ</b></span>
+    <span><i>Udyam (MSME)</i> <b>UDYAM-DL-06-0227011</b></span>
+    <span class="tb-last">A registered business in Delhi, India</span>
+  </div>
+</div>
+
 <header class="nav" id="nav">
   <div class="nav-in">
     <a class="brand" href="#top" aria-label="Akeera Automations home">
@@ -584,7 +600,7 @@ a{color:var(--blue-deep)}
     <div class="field-plans">
       <div class="fplan rv">
         <h3>Field Starter</h3>
-        <p class="rate"><b>₹1,000</b><span>per month, billed monthly</span></p>
+        <p class="rate"><b>₹1,000</b><span>per month + 18% GST, billed monthly</span></p>
         <ul>
           <li>Up to 5 field users</li>
           <li>Check-in, check-out and live location</li>
@@ -597,7 +613,7 @@ a{color:var(--blue-deep)}
 
       <div class="fplan on rv d1">
         <h3>Field Pro</h3>
-        <p class="rate"><b>₹2,000</b><span>per month, billed monthly</span></p>
+        <p class="rate"><b>₹2,000</b><span>per month + 18% GST, billed monthly</span></p>
         <ul>
           <li>Up to 20 field users</li>
           <li>Everything in Field Starter</li>
@@ -824,7 +840,7 @@ a{color:var(--blue-deep)}
       <div class="plan rv">
         <h3 class="plan-name">Starter</h3>
         <p class="plan-for">For one clear problem — the document, register or report that is eating someone's whole day.</p>
-        <p class="plan-price"><b>₹18,000</b><span>onwards, paid once</span>
+        <p class="plan-price"><b>₹18,000</b><span>onwards, paid once · + 18% GST</span>
           <span class="plan-alt">or ₹1,500 a month — no large payment upfront</span></p>
         <ul>
           <li>One system, built on the sheet your team already uses</li>
@@ -841,7 +857,7 @@ a{color:var(--blue-deep)}
         <span class="plan-tag">Most chosen</span>
         <h3 class="plan-name">Professional</h3>
         <p class="plan-for">For a sales team working outside the office, and an owner who wants the day's numbers without asking for them.</p>
-        <p class="plan-price"><b>₹65,000</b><span>onwards, paid once</span>
+        <p class="plan-price"><b>₹65,000</b><span>onwards, paid once · + 18% GST</span>
           <span class="plan-alt">or ₹4,500 a month — no large payment upfront</span></p>
         <ul>
           <li>Everything in Starter</li>
@@ -859,7 +875,7 @@ a{color:var(--blue-deep)}
       <div class="plan rv d2">
         <h3 class="plan-name">Enterprise</h3>
         <p class="plan-for">For a full order-to-payment system across departments, connected to the software you already run.</p>
-        <p class="plan-price"><b>₹1,50,000</b><span>onwards, scoped and quoted for your business</span>
+        <p class="plan-price"><b>₹1,50,000</b><span>onwards, scoped and quoted · + 18% GST</span>
           <span class="plan-alt">or ₹9,500 a month — no large payment upfront</span></p>
         <ul>
           <li>Everything in Professional</li>
@@ -875,7 +891,7 @@ a{color:var(--blue-deep)}
       </div>
     </div>
 
-    <p class="price-note rv">Every plan can be paid once, or spread over a monthly fee if you would rather not put a large amount down at the start — the system is yours either way, and either way you can stop whenever you want. Every figure here is the full amount; no GST is charged at present. Rates are reviewed twice a year, but once your scope document is signed, that price does not move.</p>
+    <p class="price-note rv">Every plan can be paid once, or spread over a monthly fee if you would rather not put a large amount down at the start — the system is yours either way, and either way you can stop whenever you want. All prices are exclusive of GST, which is charged at 18% and shown separately on a proper tax invoice — so if your business is GST registered, you can claim it back. Rates are reviewed twice a year, but once your scope document is signed, that price does not move.</p>
 
     <div class="plan-incl rv">
       <div>
@@ -903,17 +919,17 @@ a{color:var(--blue-deep)}
         <div class="tool">
           <b>Maps Extractor Pro</b>
           <p>Search businesses by city and category, and get back the ones with a working contact email.</p>
-          <span class="price">₹999 <em>a month</em></span>
+          <span class="price">₹999 <em>a month + GST</em></span>
         </div>
         <div class="tool">
           <b>WhatsApp Label Exporter</b>
           <p>Pulls your WhatsApp Business labels and customer notes into Excel or Google Sheets.</p>
-          <span class="price">₹699 <em>a month</em></span>
+          <span class="price">₹699 <em>a month + GST</em></span>
         </div>
         <div class="tool">
           <b>Daily report pack</b>
           <p>Sales, attendance and collection figures compiled from your data and sent to you every evening.</p>
-          <span class="price">₹2,500 <em>a month</em></span>
+          <span class="price">₹2,500 <em>a month + GST</em></span>
         </div>
       </div>
       <p class="price-foot">Working with a team outside India? We quote international projects in USD — write to <a href="mailto:admin@akeeraautomations.com">admin@akeeraautomations.com</a>.</p>
@@ -954,7 +970,7 @@ a{color:var(--blue-deep)}
         <img src="assets/udyam-logo.png" alt="Udyam registration mark" loading="lazy" onerror="this.style.display='none'">
         <span class="udyam-tx">
           <b>A registered Indian business</b>
-          <span>Udyam (MSME) Registration No. UDYAM-DL-06-0227011</span>
+          <span>GSTIN 07CUCPB3252M1ZQ<br>Udyam (MSME) Registration No. UDYAM-DL-06-0227011</span>
           <a href="https://udyamregistration.gov.in/Udyam_Verify.aspx" target="_blank" rel="noopener">Verify on the government portal</a>
         </span>
       </div>
@@ -991,6 +1007,10 @@ a{color:var(--blue-deep)}
       <div class="faq-body"><p>Because a five-person trading firm and a hundred-person factory need very different systems, and quoting one number for both would mean overcharging one of you. The plans show where each level starts. After the first call you get a single fixed figure in writing, and it does not move afterwards.</p></div>
     </details>
     <details>
+      <summary>Do you charge GST, and will we get a proper invoice?</summary>
+      <div class="faq-body"><p>Yes to both. We are GST registered, and every payment comes with a proper GST tax invoice carrying our GSTIN. If your business is registered too, the 18% is input credit you can claim back, so the real cost to you is the price shown.</p></div>
+    </details>
+    <details>
       <summary>Can we pay monthly instead of all at once?</summary>
       <div class="faq-body"><p>Yes. Every plan has a monthly figure next to the one-time price. Most owners who are trying us for the first time start monthly, see the system working for a few months, and some switch to the one-time payment later because it works out cheaper. There is no lock-in either way.</p></div>
     </details>
@@ -1015,6 +1035,7 @@ a{color:var(--blue-deep)}
         <li><span>WhatsApp and phone</span><a href="https://wa.me/919599750469" target="_blank" rel="noopener">+91 95997 50469</a></li>
         <li><span>Email</span><a href="mailto:admin@akeeraautomations.com">admin@akeeraautomations.com</a></li>
         <li><span>Based in</span><em>Delhi, India — working across NCR and remote</em></li>
+        <li><span>GSTIN</span><em>07CUCPB3252M1ZQ</em></li>
         <li><span>Udyam (MSME) registration</span><em>UDYAM-DL-06-0227011</em></li>
       </ul>
     </div>
@@ -1093,7 +1114,7 @@ a{color:var(--blue-deep)}
       </svg>
       © <span id="yr">2026</span> Akeera Automations — Delhi, India
     </span>
-    <span class="foot-reg">Udyam Registered · UDYAM-DL-06-0227011</span>
+    <span class="foot-reg">GSTIN 07CUCPB3252M1ZQ · Udyam UDYAM-DL-06-0227011</span>
     <span class="foot-promise">Your work is our own work. We never waste your investment.</span>
   </div>
 </footer>
@@ -1117,6 +1138,8 @@ a{color:var(--blue-deep)}
   "email":"admin@akeeraautomations.com",
   "address":{"@type":"PostalAddress","addressLocality":"Delhi","addressCountry":"IN"},
   "founder":{"@type":"Person","name":"Sandeep Bardhan","jobTitle":"Senior MIS Analyst"},
+  "taxID":"07CUCPB3252M1ZQ",
+  "vatID":"07CUCPB3252M1ZQ",
   "identifier":{"@type":"PropertyValue","name":"Udyam Registration Number","value":"UDYAM-DL-06-0227011"},
   "priceRange":"₹₹",
   "hasOfferCatalog":{
